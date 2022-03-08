@@ -1,15 +1,13 @@
 import express, { NextFunction, Request, Response } from "express";
 
-import { categoriesRoutes } from "./routes/categories.routes";
-import { specificationRoutes } from "./routes/specifications.routes";
+import { router } from "./routes";
 
 const app = express();
 
 app.use(express.json());
 
-// set routes path
-app.use("/categories", categoriesRoutes);
-app.use("/specifications", specificationRoutes);
+// set routes
+app.use(router);
 
 app.use((error: any, req: Request, res: Response, next: NextFunction) => {
   if (error instanceof Error) {
