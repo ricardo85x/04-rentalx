@@ -8,7 +8,7 @@ export const ErrorHandlingMiddleware = (
   _next: NextFunction
 ) => {
   if (error instanceof Error) {
-    return res.status(401).json({ error: error.message });
+    return res.status(500).json({ error: error.message });
   }
 
   return res
