@@ -1,10 +1,34 @@
 version: "3.7"
 
 services:
+  database_rentex:
+    image: postgres
+    container_name: database_rentex
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+    volumes:
+      - pgdata:/data/postgres
   app:
     build: .
     container_name: rentex
+    depends_on:
+      - database_rentex
+    links:
+      - database_rentex
     ports:
       - 3334:3333
+
     volumes:
       - .:/usr/app
+
+volumes:
+  pgdata:
+    driver: local
+
+
+# https://stackoverflow.com/questions/55851632/docker-compose-network-mode-host-not-working
