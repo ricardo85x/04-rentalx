@@ -17,10 +17,11 @@
     "reflect-metadata": "^0.1.13",
     "supertest": "^6.2.2",
     "swagger-ui-express": "^4.3.0",
-    "typeorm": "^0.3.1",
+    "typeorm": "^0.3.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
     "@types/multer": "^1.4.7",

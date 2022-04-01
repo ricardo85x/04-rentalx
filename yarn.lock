@@ -630,6 +630,13 @@
   dependencies:
     csv-parse "*"
 
+"@types/dotenv@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@types/dotenv/-/dotenv-8.2.0.tgz#5cd64710c3c98e82d9d15844375a33bf1b45d053"
+  integrity sha512-ylSC9GhfRH7m1EUXBXofhgx4lUWmFeQDINW5oLuS+gxWdfUeW4zJdeVTYVkexEW+e2VUvlZR2kGnGGipAWR7kw==
+  dependencies:
+    dotenv "*"
+
 "@types/express-serve-static-core@^4.17.18":
   version "4.17.28"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.28.tgz#c47def9f34ec81dc6328d0b1b5303d1ec98d86b8"
@@ -1583,7 +1590,7 @@ domexception@^2.0.1:
   dependencies:
     webidl-conversions "^5.0.0"
 
-dotenv@^16.0.0:
+dotenv@*, dotenv@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
   integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
@@ -4364,10 +4371,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeorm@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.3.1.tgz#94c5600bb1ad8e63dbf48b2a6fc77c2e9c429b04"
-  integrity sha512-uuZzjiPfmRMQkzB3/Gw09vr8ytm3p0NY1+mBQzxwKbNRAi44ePORFM9oCIWUwZB3GzfU7or/pZL7zvWy2xegWg==
+typeorm@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.3.4.tgz#6608f7efb15c40f3fa2863cefb45ff78a208c40c"
+  integrity sha512-6v3HH12viDhIQwQDod/B0Plt1o7IYIVDxP7zwatD6fzN+IDdqTTinW/sWNw84Edpbhh2t7XILTaQEqj0NXFP/Q==
   dependencies:
     "@sqltools/formatter" "^1.2.2"
     app-root-path "^3.0.0"
